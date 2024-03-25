@@ -1,10 +1,10 @@
 export default function Skills(){
     return(
         <>
-            <section class="my-skills" id="skills">
-        <h2 class="section__title section__title--skills">My Skills</h2>
-        <div class="skills">
-            <div class="skill">
+            <section className="my-skills" id="skills">
+        <h2 className="section__title section__title--skills">My Skills</h2>
+        <div className="skills">
+            <div className="skill">
                 <h3>Industry Knowledge</h3>
                 <p>Merging the creative flair from my Fashion Management background 
                     with my technical expertise in Mobile & Web Development, I bring a 
@@ -15,7 +15,7 @@ export default function Skills(){
                     and seamless for users to navigate.</p>
             </div>
 
-            <div class="skill">
+            <div className="skill">
                 <h3>Tools & Technologies</h3>
                 <p>HTML, CSS & JavaScript are the bread and butter of my toolkit as a front-end 
                     developer. With these, I have the capability to breathe life into 
@@ -25,7 +25,7 @@ export default function Skills(){
                     on the cutting edge of web development.</p>
             </div>
 
-            <div class="skill">
+            <div className="skill">
                 <h3>Interpersonal Skills</h3>
                 <p>Years of nurturing customer relations and leading teams have fine-tuned 
                     my interpersonal skills. Whether I'm decoding client needs or collaborating 
@@ -35,7 +35,7 @@ export default function Skills(){
                      digital solutions.</p>
             </div>
         </div>
-        <a href="#projects" class="btn">See My Work</a>
+        <a href="#projects" className="btn">See My Work</a>
         
     </section>
         </>

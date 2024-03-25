@@ -1,11 +1,11 @@
 export default function About(){
     return(
         <>
-            <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">About Me</h2>
-        <p class="section__subtitle section__subtitle--about">Designer & Developer based out of Toronto</p>
+            <section className="about-me" id="about">
+        <h2 className="section__title section__title--about">About Me</h2>
+        <p className="section__subtitle section__subtitle--about">Designer & Developer based out of Toronto</p>
 
-        <div class="about-me__body">
+        <div className="about-me__body">
             <p>With more than ten years in customer service, I'm not just a front-end web developer; 
                 I'm your go-to girl for creating websites that people actually enjoy using. My knack for 
                 understanding users' needs comes from a background of making customers happy, and I bring 
@@ -15,7 +15,7 @@ export default function About(){
                 kind of customer service!</p>
         </div>
 
-        <img src="img/full-body1.png" alt="pixar style shanelle standing" class="about-me__img" />
+        <img src="img/full-body1.png" alt="pixar style shanelle standing" className="about-me__img" />
     </section>
         </>
     )
