@@ -134,11 +134,8 @@ header{
     padding: 1em;
 }
 
-.logo{
-    max-width: 200px;
-}
 
-.nav{
+/* .nav{
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -230,7 +227,7 @@ header{
 }
 
 .hamburger::before{ top: 8px } 
-.hamburger::after{ bottom: 8px }
+.hamburger::after{ bottom: 8px } */
 
 /*Intro Section*/
 

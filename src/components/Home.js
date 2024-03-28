@@ -1,7 +1,19 @@
+import { useEffect } from "react";
+
 export default function Home(){
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash){
+            const section = document.querySelector(hash);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
+
     return(
         <>
-        <header>
+        {/* <header>
         <div className="logo">
             <a href="#home" className="nav__link"><img src="img/logoBlack.png" alt="" /></a>
         </div>
@@ -18,7 +30,7 @@ export default function Home(){
                 <li className="nav__item"><a href="#tutorials" className="nav__link">Tutorials</a></li>
             </ul>
         </nav>
-    </header>
+    </header> */}
 
     {/* <!--Introduction--> */}
     <section className="intro" id="home">

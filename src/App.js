@@ -14,24 +14,26 @@ import GraphicDesign from "./pages/GraphicDesign";
 function App() {
   return (
      <Router>  
+      <NavBar />
     <div className="App">
     <Routes>
     <Route path="/home" element={
       <>
-     <Home />
-     <Skills />
-     <About />
-     <Projects />
-     <Tutorials />
-     </>
+        <Home />
+        <Skills />
+        <About />
+        <Projects />
+        <Tutorials />
+      </>
+      
     } />
       <Route path="/project01" element={<Project01/>} />
       <Route path="/project02" element={<Project02/>} />
       <Route path="/graphicdesign" element={<GraphicDesign/>} />
     </Routes>
-    <Footer />
-    </div>
     
+    </div>
+    <Footer />
   </Router>
   );
 }
