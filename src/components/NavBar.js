@@ -20,7 +20,6 @@ export default function NavBar() {
         className="hamburger"
         onClick={() => setIsNavExpanded(!isNavExpanded)}
       >
-        {/* Hamburger icon: spans will turn into x with CSS */}
         <span></span>
         <span></span>
         <span></span>

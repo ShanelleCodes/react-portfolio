@@ -22,13 +22,13 @@ export default function Project01(){
             technologies.</p>
 
         
-            <a href="https://rick-and-morty-js-game.netlify.app/" className="rick__vid--click">
+            <a href="https://rick-and-morty-js-game.netlify.app/" className="rick__vid--click" target="_blank" rel="noopener noreferrer">
                 <video autoPlay={true} muted={true} loop>
                     <source src="/public/videos/rickGame.mp4" type="video/mp4" />
                 </video>
             </a>
 
-        <a href="https://rick-and-morty-js-game.netlify.app/" className="btn">Try Me</a>
+        <a href="https://rick-and-morty-js-game.netlify.app/" className="btn" target="_blank" rel="noopener noreferrer">Try Me</a>
 
         <h3>Development Process:</h3>
         <p>Crafted meticulously with HTML5, CSS3, and Vanilla JavaScript, the game 
