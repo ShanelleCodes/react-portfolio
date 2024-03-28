@@ -1,29 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../styles/Navbar.css";
 import { Link, useLocation } from 'react-router-dom';
 
 
 export default function NavBar() {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+    const closeNavbar = () => {
+        setIsNavExpanded(false);
+      };
+
     const location = useLocation();
 
     const isProjectPage = ["/project01", "/project02", "/graphicdesign"].includes(location.pathname);
 
   return (
-   <nav className='navbar'>
-    <div className="toggleButton">
-        <button></button>
-    </div>
+    <nav className={`navbar ${isNavExpanded ? "expanded" : ""}`}>
+    <button
+        className="hamburger"
+        onClick={() => setIsNavExpanded(!isNavExpanded)}
+      >
+        {/* Hamburger icon: spans will turn into x with CSS */}
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+ 
     <div className="logo">
             <a href="#home" className="nav__link"><img src="img/logoBlack.png" alt="" /></a>
-        </div>
-    <div className="links">
-        <Link to='/home'>Home</Link>
+    </div>
+
+    <div className={`links ${isNavExpanded ? "expanded" : ""}`}>
+        <Link to='/home' onClick={closeNavbar} >Home</Link>
         {!isProjectPage && (
             <>
-            <a href="#skills" className="nav_link">Skills</a>
-        <a href="#about" className="nav_link">About Me</a>
-        <a href="#projects" className="nav_link">Projects</a>
-        <a href="#tutorials" className="nav_link">Tutorials</a>
+            <a href="#skills" onClick={closeNavbar} className="nav_link">Skills</a>
+        <a href="#about" onClick={closeNavbar} className="nav_link">About Me</a>
+        <a href="#projects" onClick={closeNavbar} className="nav_link">Projects</a>
+        <a href="#tutorials" onClick={closeNavbar} className="nav_link">Tutorials</a>
             </>
         )}
     </div>

@@ -12,12 +12,10 @@
   z-index: 10; 
 }
 
-
 .logo img {
   height: auto;
   width: 200px; 
 }
-
 
 .links {
   display: flex;
@@ -35,6 +33,9 @@
 .navbar a:hover {
   color: var(--clr-dark);
 }
+.navbar a:active {
+  color: var(--clr-accent-touch); /* Change to the color you want when the link is touched */
+}
 
 .nav-link {
   text-decoration: none;
@@ -43,14 +44,110 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+/* Hamburger menu button */
+.hamburger {
+  position: absolute;
+  right: 1rem; /* Adjust as needed for your layout */
+  top: 50%;
+  transform: translateY(-50%);
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--clr-light);
+  border-radius: 10px;
+  opacity: 1;
+  transform: rotate(0);
+  transition: all 0.3s linear;
+}
+
+/* Transform into 'x' icon */
+.expanded .hamburger span:first-child {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+
+.expanded .hamburger span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.expanded .hamburger span:last-child {
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+
+/* Navbar links */
+.links {
+  display: flex;
+  /* ... other styles ... */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Style the navbar when the menu is expanded */
+  .navbar.expanded {
+    background-color: var(--clr-dark); /* Dark background */
+  }
+
+  /* Show the hamburger and hide the links by default */
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+  }
+
+  /* Style the links container when the hamburger is expanded */
+  .links.expanded {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 4rem; /* Height of the navbar */
+    left: 0;
+    background-color: var(--clr-dark); /* Dark background for the expanded menu */
+  }
+
+  /* Style the individual links when expanded */
+  .links.expanded a {
+    display: block;
+    padding: 1rem; /* Spacing for the links */
+    color: var(--clr-light); /* Light text color */
+    text-align: center; /* Center text */
+    /* Add transition for smooth color change */
+    transition: color 0.3s ease;
+  }
+  .links.expanded a:active {
+    color: var(--clr-accent-touch); /* Change to the color you want when the link is touched */
+  }
+
+}
+
+
+/* @media only screen and (max-width: 600px) {
   .nav-link {
-    display: none; /* Hide the links on mobile */
+    display: none;
   }
   .toggleButton {
-    display: block; /* Show the hamburger button on mobile */
+    display: block; 
   }
-}
+} */
 
 
 /* .navbar {

@@ -559,8 +559,11 @@ iframe{
 /* project01 */
 
 .portfolio-item-individual video{
-    max-width: 1000px;
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto;
+    z-index: 10;
 }
 .rick__vid--click:hover{
     /* opacity: .90; */
