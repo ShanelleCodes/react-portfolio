@@ -47,7 +47,7 @@
 /* Hamburger menu button */
 .hamburger {
   position: absolute;
-  right: 1rem; /* Adjust as needed for your layout */
+  right: 1rem; 
   top: 50%;
   transform: translateY(-50%);
   display: none; 
@@ -130,6 +130,7 @@
     padding: 1rem; /* Spacing for the links */
     color: var(--clr-light); /* Light text color */
     text-align: center; /* Center text */
+    width: 200px;
     /* Add transition for smooth color change */
     transition: color 0.3s ease;
   }

@@ -561,8 +561,9 @@ iframe{
 
 /* project01 */
 
-.portfolio-item-individual video{
-    max-width: 100%;
+.portfolio-item-individual img{
+    max-width: 800px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;

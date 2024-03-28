@@ -4,16 +4,16 @@ import React from "react";
 export default function Project02(){
     return(
         <>
-        <section class="intro" id="">
-        <h1 class="section__title section__title--intro">
+        <section className="intro" id="">
+        <h1 className="section__title section__title--intro">
             E-Commerce<strong>My Tunes</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">ASP.Net Core 8 MVC</p>
-        <img src="/img/projectImg/project02.jpg" alt="" class="intro__img" />
+        <p className="section__subtitle section__subtitle--intro">ASP.Net Core 8 MVC</p>
+        <img src="/img/projectImg/project02.jpg" alt="" className="intro__img" />
     </section>
  
 
-    <div class="portfolio-item-individual">
+    <div className="portfolio-item-individual">
         <p>My Tunes is an e-commerce platform crafted meticulously for music lovers and collectors. 
             It serves as a one-stop digital storefront where users can browse, sample, and purchase 
             a diverse collection of musical tracks and albums. This project represents the confluence 

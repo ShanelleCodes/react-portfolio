@@ -12,7 +12,6 @@ export default function Project01(){
         <p className="section__subtitle section__subtitle--intro">Vanilla JavaScript Game</p>
         <img src="/img/projectImg/project01.jpg" alt="" className="intro__img" />
     </section>
- 
 
     <div className="portfolio-item-individual">
         <p>Embark on a cosmic adventure with the Intergalactic Showdown, a Rick 
@@ -21,11 +20,11 @@ export default function Project01(){
             Vanilla JavaScript, this game is a testament to the power of fundamental web 
             technologies.</p>
 
-        
             <a href="https://rick-and-morty-js-game.netlify.app/" className="rick__vid--click" target="_blank" rel="noopener noreferrer">
-                <video autoPlay={true} muted={true} loop>
+                {/* <video autoPlay loop muted style={{ width: '100%', height: 'auto' }}>
                     <source src="/public/videos/rickGame.mp4" type="video/mp4" />
-                </video>
+                </video> */}
+                <img src="/img/projectImg/project01-2.jpg" alt=''  />
             </a>
 
         <a href="https://rick-and-morty-js-game.netlify.app/" className="btn" target="_blank" rel="noopener noreferrer">Try Me</a>

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import "../styles/Navbar.css";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
 export default function NavBar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const navigate = useNavigate(); // Hook to navigate
 
     const closeNavbar = () => {
         setIsNavExpanded(false);
@@ -13,6 +14,17 @@ export default function NavBar() {
     const location = useLocation();
 
     const isProjectPage = ["/project01", "/project02", "/graphicdesign"].includes(location.pathname);
+
+    const handleLogoClick = () => {
+        // If on the homepage, scroll to the top
+        if (location.pathname === '/home') {
+          window.scrollTo(0, 0);
+        } else {
+          // If on any other page, navigate to the homepage
+          navigate('/home');
+        }
+        closeNavbar();
+      };
 
   return (
     <nav className={`navbar ${isNavExpanded ? "expanded" : ""}`}>
@@ -26,7 +38,8 @@ export default function NavBar() {
       </button>
  
     <div className="logo">
-            <a href="#home" className="nav__link"><img src="img/logoBlack.png" alt="" /></a>
+            {/* <a href="#home" className="nav__link"><img src="img/logoBlack.png" alt="" /></a> */}
+            <img src="/img/logoBlack.png" alt="" className="nav__link" onClick={handleLogoClick} />
     </div>
 
     <div className={`links ${isNavExpanded ? "expanded" : ""}`}>
