@@ -233,6 +233,7 @@ header{
 
 .intro{
     position: relative;
+    padding-top: 5em;
 }
 
 .intro__img{
