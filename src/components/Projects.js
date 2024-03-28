@@ -18,7 +18,7 @@ export default function Projects(){
                 <img src="/img/projectImg/project02.jpg" alt="" className="portfolio__img" />
             </Link>
            
-            <Link to="/graphicdesign" className="portfolio__item" >
+            <Link to="/graphicdesign" className="portfolio__item" hidden >
                 <img src="/img/projectImg/graphic-design.jpg" alt="" className="portfolio__img" />
             </Link>
             

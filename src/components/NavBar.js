@@ -50,28 +50,22 @@ export default function NavBar() {
         <a href="#about" onClick={closeNavbar} className="nav_link">About Me</a>
         <a href="#projects" onClick={closeNavbar} className="nav_link">Projects</a>
         <a href="#tutorials" onClick={closeNavbar} className="nav_link">Tutorials</a>
+        <div className='nav-social'>
+                <a className="socail-list__link" target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/channel/UCpabSA4KaybPjoxM2b_xAFQ">
+                <i className="fa-brands fa-youtube"></i></a>
+
+                <a className="socail-list__link" target="_blank" rel="noopener noreferrer"
+                href="https://github.com/ShanelleCodes">
+                <i className="fa-brands fa-github"></i></a>
+
+                <a className="socail-list__link" target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/shanelle-haye/">
+                <i className="fa-brands fa-linkedin"></i></a>
+                </div>
             </>
         )}
     </div>
-    {/* <div className='nav-social'>
-    <ul className="nav-social">
-            <li className="nav-social__item">
-                <a className="socail-list__link"
-                href="https://www.youtube.com/channel/UCpabSA4KaybPjoxM2b_xAFQ">
-                <i className="fa-brands fa-youtube"></i></a>
-            </li>
-            <li className="nav-social__item">
-                <a className="socail-list__link"
-                href="https://github.com/ShanelleCodes">
-                <i className="fa-brands fa-github"></i></a>
-            </li>
-            <li className="nav-social__item">
-                <a className="socail-list__link"
-                href="https://www.linkedin.com/in/shanelle-haye/">
-                <i className="fa-brands fa-linkedin"></i></a>
-            </li>
-        </ul>
-    </div> */}
    </nav>
   )
 }

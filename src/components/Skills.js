@@ -37,7 +37,9 @@ export default function Skills(){
                      digital solutions.</p>
             </div>
         </div>
-        <a href="#projects" className="btn">See My Work</a>
+        <a 
+      href="/SHANELLE _HAYE_Resume.pdf" className="btn" target="_blank" rel="noopener noreferrer" > View My Resume
+    </a>
         
     </section>
         </>

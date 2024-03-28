@@ -42,6 +42,21 @@
   color: var(--clr-dark);
   font-weight: bold;
 }
+.nav-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  
+}
+
+.nav-social a{
+  color: black;
+}
+
+.nav-social a:hover{
+  color: var(--clr-light);
+}
 
 
 /* Hamburger menu button */
@@ -94,7 +109,6 @@
 /* Navbar links */
 .links {
   display: flex;
-  /* ... other styles ... */
 }
 
 /* Responsive styles */
@@ -130,10 +144,11 @@
     padding: 1rem; /* Spacing for the links */
     color: var(--clr-light); /* Light text color */
     text-align: center; /* Center text */
-    width: 200px;
+    width: 150px;
     /* Add transition for smooth color change */
     transition: color 0.3s ease;
   }
+  
   .links.expanded a:active {
     color: var(--clr-accent-touch); /* Change to the color you want when the link is touched */
   }
